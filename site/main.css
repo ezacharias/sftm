@@ -1,0 +1,725 @@
+div,
+div:focus,
+div:active,
+div:hover,
+button,
+button:focus,
+button:active,
+button:hover {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+button {
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+    color: White;
+    font-family: sans-serif;
+    font-size: 91%;
+    background: none;
+}
+
+button,
+.clickable {
+    cursor: pointer;
+}
+
+svg {
+    shape-rendering: geometricPrecision;
+}
+
+div {
+    overflow: hidden;
+}
+
+a,
+a:focus,
+a:active,
+a:hover {
+    text-decoration: none;
+    color: White;
+}
+
+#scrolling {
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    /* This is needed for momentum scrolling. */
+    -webkit-overflow-scrolling: touch;
+}
+
+ol,
+ul {
+    list-style-type: none;
+
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+li {
+    position: relative;
+    padding: 4px 8px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+    background: LightSlateGrey;
+
+    color: White;
+    font-family: serif;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+
+    font-size: 110%;
+}
+
+div.grow {
+    flex-grow: 1;
+}
+
+div.grow-2 {
+    flex-grow: 2;
+}
+
+button.li-fill {
+    width: 100%;
+    min-height: 48px;
+    display: flex;
+    align-items: stretch;
+}
+
+li.listing-problem-item {
+    display: flex;
+}
+
+div.listing-tombstone {
+    width: 28px;
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.listing-description {
+    width: 100%;
+    padding: 6px 4px;
+}
+
+div.listing-about-item {
+    padding-top: 35px;
+    padding-bottom: 47px;
+    text-align: center;
+    font-size: 91%;
+}
+
+div.content-frame {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+div.content-body {
+    /* This is here so children can use absolute positioning. */
+    position: relative;
+
+    flex-grow: 0;
+    flex-shrink: 1;
+    width: 100%;
+    height: 100%;
+    max-width: 512px;
+
+    /* background: DarkSlateGrey; */
+    /* background: #2F4F4F; */
+    /* background: #294545; */
+    background: #264040;
+    /* background: #233B3B; */
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+div.intro-title {
+    /* margin-top: 120px; */
+
+    text-align: center;
+    font-size: 150%;
+}
+
+div.intro-view {
+    margin-top: 16px;
+
+    text-align: center;
+}
+
+button.intro-button {
+    margin-top: 40px;
+    align-self: center;
+
+    border: solid 1px White;
+    padding: 6px 8px 6px 8px;
+    border-radius: 6px;
+}
+
+div.about-box {
+    text-align: center;
+}
+
+div.about-title {
+    font-size: 150%;
+}
+
+div.about-version {
+    margin-top: 12px;
+    font-size: 86%;
+}
+
+div.about-created {
+    margin-top: 48px;
+    font-size: 109%;
+}
+
+div.about-email {
+    margin-top: 12px;
+    font-size: 86%;
+}
+
+div.about-copyright {
+    text-align: center;
+
+    /* font-size: 75%; */
+    font-size: 65%;
+    margin-bottom: 32px;
+}
+
+div.proof {
+    height: 100%;
+    overflow-x: scroll;
+}
+
+div.proof-body {
+    width: max-content;
+    width: -webkit-max-content;
+    padding: 0px 8px;
+}
+
+div.proof-description {
+    padding: 8px 8px 4px 8px;
+}
+
+div.proof-antecedents {
+    padding: 4px 8px;
+}
+
+div.proof-type {
+    padding: 4px 8px 0 8px;
+}
+
+ol.proof-list {
+    width: max-content;
+    width: -webkit-max-content;
+}
+
+li.proof-step {
+    width: max-content;
+    width: -webkit-max-content;
+    min-height: 24px;
+    display: flex;
+    align-items: center;
+}
+
+div.proof-start {
+    box-sizing: border-box;
+    width: 48px;
+    padding-left: 4px;
+    flex-shrink: 0;
+
+    font-size: 80%;
+    text-align: left;
+}
+
+div.proof-numbering {
+    box-sizing: border-box;
+    width: 48px;
+    padding-right: 20px;
+    flex-shrink: 0;
+
+    font-size: 80%;
+    text-align: center;
+}
+
+div.proof-tombstone {
+    box-sizing: border-box;
+    width: 56px;
+    padding: 8px 20px 16px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.proof-formula {
+    padding-right: 20px;
+    flex-shrink: 0;
+}
+
+div.proof-rule {
+    width: max-content;
+    width: -webkit-max-content;
+    white-space: nowrap;
+}
+
+
+
+
+div.main-formula {
+    height: 48px;
+    padding-top: 4px;
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+li.scratch-item-2 {
+    position: relative;
+    padding: 0;
+}
+
+li.selected {
+    /* background: #253F3F; */
+
+    /* background: #233B3B; */
+    /* background: #203636; */
+    /* background: #1D3131; */
+    background: #1A2C2C;
+}
+
+div.scratch-item-body {
+    padding: 12px 24px;
+}
+
+button.scratch-remove-button {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/*
+ * Solve
+ */
+
+div.navigation {
+    height: 72px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.time-arrow-size {
+    flex-basis: 0;
+    height: 72px;
+    flex-grow: 1;
+}
+
+.time-arrow-size svg {
+    position: relative;
+    right: 12px;
+}
+
+button.fab {
+    width: 72px;
+    height: 72px;
+    flex-shrink: 0;
+}
+
+.panel-title {
+    height: 48px;
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: space-between;
+    padding-right: 12px;
+}
+
+.up-down-arrows {
+    width: 16px;
+    height: 16px;
+    padding-top: 2px;
+}
+
+button.panel-title-button {
+    padding: 0 12px;
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+div.panel-title-text {
+    margin-left: 8px;
+}
+
+button.panel-button {
+    padding: 0 12px;
+}
+
+button.panel-button:disabled {
+    color: LightSlateGrey;
+}
+
+
+
+/*
+ * Dialog
+ */
+
+div.dialog-command {
+    height: 72px;
+    padding-bottom: 12px;
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+div.dialog-control {
+    height: 64px;
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+button.circle-button-2 {
+    width: 56px;
+    height: 56px;
+
+    margin: 4px;
+    border-radius: 50%;
+}
+
+button.circle-button-2.selected {
+    /* background-color: #253F3F; */
+    background: #1A2C2C;
+}
+
+div.panel-body {
+    flex-grow: 1;
+    padding-bottom: 12px;
+}
+
+div.notes-panel-body {
+    flex-grow: 1;
+    padding: 0 12px 12px 12px;
+}
+
+ul.top-list,
+ol.top-list {
+    flex-grow: 1;
+    padding-top: 12px;
+}
+
+ul.bottom-list,
+ol.bottom-list {
+    flex-grow: 1;
+    padding-bottom: 12px;
+}
+
+ul.full-list,
+ol.full-list {
+    flex-grow: 1;
+    padding: 12px 0;
+}
+
+button.basic {
+    margin: 4px;
+    padding: 6px;
+    min-width: 40px;
+    min-height: 40px;
+
+    /* display: inline-block; */
+}
+
+button.basic:disabled {
+    color: LightSlateGrey;
+}
+
+div.top-title {
+    padding-bottom: 6px;
+
+    font-family: sans-serif;
+    font-size: 67%;
+}
+
+li.term-item {
+    padding: 6px 24px;
+}
+
+li.term-item-formula {
+    position: absolute;
+    top: -6px;
+    right: -24px;
+    bottom: -6px;
+    left: -24px;
+}
+
+li.rule-item {
+    padding: 12px 24px;
+}
+
+div.rule-name {
+    margin-bottom: 6px;
+
+    font-size: 91%;
+}
+
+span.flipped {
+    font-size: 78%;
+    color: #B0B0B0;
+    margin-left: 12px;
+}
+
+div.rule-svg {
+    min-height: 32px;
+    display: flex;
+    align-items: center;
+}
+
+div.left-svg-box {
+    min-height: 34px;
+    display: flex;
+    align-items: center;
+}
+
+div.center-svg-box {
+    min-height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li.history-item {
+    padding: 12px 24px 12px 0;
+    min-height: 32px;
+
+    display: flex;
+    align-items: center;
+}
+
+div.history-gutter {
+    width: 56px;
+
+    font-size: 80%;
+    text-align: center;
+
+    flex-shrink: 0;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.nav-bar {
+    height: 48px;
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button.nav-bar-button {
+    height: 48px;
+    width: 48px;
+}
+
+
+
+
+
+/*
+ * Popup
+ */
+
+div.popup-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div.popup {
+    background: DarkSlateGrey;
+    /* background: #2F4F4F; */
+    /* background: #294545; */
+    background: #264040;
+    /* background: #233B3B; */
+
+    border: 1px solid White;
+    box-shadow: 0px 0px 12px 0px Grey;
+    position: absolute;
+}
+
+div.panel-popup {
+    top: 61px;
+    left: 22px;
+
+    padding: 11px 0;
+}
+
+div.settings-popup {
+    top: 22px;
+    right: 22px;
+
+    padding: 11px 0;
+}
+
+li.panel-select-item {
+    padding: 0px;
+}
+
+button.panel-select-button {
+    text-align: left;
+    padding: 11px 22px;
+    width: 100%;
+}
+
+button.panel-select-button:disabled {
+    color: LightSlateGrey;
+}
+
+div.reset-popup {
+    top: 100px;
+    left: calc(50% - 125px);
+    /* right: 100px; */
+    width: 250px;
+}
+
+div.reset-popup-text {
+    margin: 22px;
+    /* font-size: 110%; */
+}
+
+div.reset-popup-buttons {
+    margin: 22px 10px 22px 22px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+div.copy-popup {
+    top: 100px;
+    left: calc(50% - 100px);
+    width: 200px;
+}
+
+div.copy-popup-text {
+    margin: 22px;
+    /* font-size: 110%; */
+}
+
+div.copy-popup-buttons {
+    margin: 22px 10px 22px 22px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+svg.center-formula {
+    height: 48px;
+    width: 100%;
+    transform: scale(1, -1);
+}
+
+p {
+    line-height: 1.25;
+    /* font-size: 110% */
+}
+
+p.center-text {
+    text-align: center;
+}
+
+p:first-of-type {
+    margin-top: 0;
+}
+
+p:last-of-type {
+    margin-bottom: 0;
+}
+
+div.listing-problem-text {
+    font-size: 67%;
+    /* Change here */
+    color: #CFCFCF;
+    /* color: DimGrey; */
+
+    /* line-height: 0.48; */
+}
+
+div.listing-title-text {
+    /* font-size: 110%; */
+}
+
+@media (max-device-width: 480px) {
+    div.intro-view {
+        display: none;
+    }
+}
+
+/* @media screen and (max-height: 500px) and (orientation: landscape) { */
+@media screen and (max-device-width: 480px) and (orientation: landscape) {
+
+    div.content-body {
+        max-width: unset;
+    }
+
+    .landscape-hide {
+        display: none;
+    }
+}
+
+div.formula-svg-box {
+    height: 48px;
+    width: 100%;
+}
