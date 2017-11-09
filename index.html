@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="A logic game." />
+    <link type="image/png" rel="icon" href="/icon.png">
+    <title>Sympathy for the Machine</title>
+
+    <link type="text/css" rel="stylesheet" href="/main.css">
+    <script async src="/main.js"></script>
+    <svg style="display:none;"><defs id="glyphs"></defs></svg>
+
+    <!-- Google Analytics -->
+    <script>
+        window.ga = window.ga || function() {
+            (ga.q = ga.q || []).push(arguments)
+        };
+        ga.l = +new Date;
+        ga('create', 'UA-99025609-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+
+    <script>
+        var schIsDocumentLoaded = false;
+        var schStartHereClicked = function() {
+            ga('send', 'event', 'Main', 'Start');
+            schIsDocumentLoaded = true;
+        };
+    </script>
+</head>
+
+<body>
+
+    <div id="initial-content-frame" class="content-frame">
+        <div class="content-body">
+            <div class="grow"></div>
+            <div class="intro-title">Sympathy for the Machine</div>
+            <div class="intro-view">Best viewed on a cell phone.</div>
+            <button class="intro-button" onClick="schStartHereClicked();">Start Here</button>
+            <div class="grow-2"></div>
+        </div>
+    </div>
+    <div id="elm-content-frame" class="content-frame" style="display:none">
+    </div>
+
+
+    <script>
+        if (localStorage.getItem('book-prop-v1') !== null) {
+            document.getElementById('initial-content-frame').style.display = 'none';
+            schIsDocumentLoaded = true;
+        }
+    </script>
+
+
+</body>
+
+</html>
